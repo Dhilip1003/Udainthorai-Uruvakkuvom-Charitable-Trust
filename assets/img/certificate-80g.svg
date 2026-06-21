@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 920" role="img" aria-labelledby="title">
+  <title id="title">80G approval placeholder</title>
+  <rect width="700" height="920" fill="#f8fafc"/>
+  <rect x="52" y="48" width="596" height="824" rx="12" fill="#fff" stroke="#cbd7e5" stroke-width="4"/>
+  <rect x="100" y="96" width="500" height="78" rx="6" fill="#284a86"/>
+  <text x="350" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#fff">80G APPROVAL</text>
+  <text x="350" y="224" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#0b2742">Valuation Transparency Display</text>
+  <g fill="#637083">
+    <rect x="116" y="290" width="468" height="14" rx="7"/>
+    <rect x="116" y="332" width="404" height="14" rx="7"/>
+    <rect x="116" y="374" width="438" height="14" rx="7"/>
+    <rect x="116" y="456" width="430" height="14" rx="7"/>
+    <rect x="116" y="498" width="372" height="14" rx="7"/>
+    <rect x="116" y="540" width="450" height="14" rx="7"/>
+  </g>
+  <rect x="246" y="626" width="208" height="112" rx="12" fill="#f2b84b" opacity=".3"/>
+  <text x="350" y="696" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#284a86">80G</text>
+</svg>

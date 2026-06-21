@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Udainthorai Uruvakkuvom Charitable Trust mark</title>
+  <desc id="desc">A stylized hand, leaf, and rising sun trust emblem.</desc>
+  <defs>
+    <linearGradient id="g" x1="24" y1="20" x2="136" y2="144" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b5f8f"/>
+      <stop offset=".52" stop-color="#0f8a72"/>
+      <stop offset="1" stop-color="#f2b84b"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="28" fill="#f7fbff"/>
+  <circle cx="80" cy="74" r="46" fill="url(#g)" opacity=".16"/>
+  <path d="M44 84c15 21 40 35 72 26 2-.6 3.6 1.9 2.1 3.7-13.2 16.2-41.4 20.4-64.8 2.5-11.4-8.7-18-20.4-20.5-32.6-.5-2.5 2.8-3.9 4.4-1.9 2.1 2.7 4.4 5.1 6.8 7.4z" fill="#0b5f8f"/>
+  <path d="M82 36c16.5 8.4 26.2 25.7 23.4 44.3-.3 2.2-2.9 3.1-4.4 1.4C88.9 68.4 81.1 54.1 78.3 39.5c-.4-2.1 1.9-3.5 3.7-2.6z" fill="#0f8a72"/>
+  <path d="M71.7 38.7C61.3 46.2 56 58.1 58.3 71.4c.4 2.2 3 3 4.5 1.3 8-9.5 12.5-20.1 13-31.6.1-2.1-2.4-3.5-4.1-2.4z" fill="#32a36f"/>
+  <path d="M48 78c8-18.9 21.7-31.3 42.1-36.9" fill="none" stroke="#f2b84b" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="111" cy="53" r="10" fill="#f2b84b"/>
+</svg>
