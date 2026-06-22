@@ -69,12 +69,44 @@
       </div>
     </section>
 
-    <section class="section section-soft">
+    <section class="section section-soft donation-section">
       <div class="container">
         <div class="section-head">
           <p class="eyebrow">Payment channels</p>
           <h2>Direct bank wire and instant UPI support.</h2>
         </div>
+        <article class="card donation-feature-card">
+          <div>
+            <p class="eyebrow">Monthly giving option</p>
+            <h2>Donation support for persons affected by leprosy and TB.</h2>
+            <p>Choose a monthly amount. Selecting an option will take you directly to the QR payment section.</p>
+            <form class="donation-option-form" data-donation-options data-target="#upi-qr">
+              <fieldset>
+                <legend>How will my donation help?</legend>
+                <label class="donation-option">
+                  <input type="radio" name="monthly_amount" value="300">
+                  <span>&#8377;300</span>
+                </label>
+                <label class="donation-option">
+                  <input type="radio" name="monthly_amount" value="500">
+                  <span>&#8377;500</span>
+                </label>
+                <label class="donation-option">
+                  <input type="radio" name="monthly_amount" value="4000">
+                  <span>&#8377;4000</span>
+                </label>
+                <label class="donation-option">
+                  <input type="radio" name="monthly_amount" value="1000">
+                  <span>&#8377;1000</span>
+                </label>
+                <label class="donation-option">
+                  <input type="radio" name="monthly_amount" value="2000">
+                  <span>&#8377;2000</span>
+                </label>
+              </fieldset>
+            </form>
+          </div>
+        </article>
         <div class="grid grid-2">
           <article class="card">
               <h2>Official Trust Bank Account</h2>
@@ -116,10 +148,11 @@
             </table>
           </article>
 
-          <article class="card qr-card">
+          <article class="card qr-card" id="upi-qr" tabindex="-1">
             <div>
               <p class="eyebrow">Instant UPI mobile gateway</p>
               <h2>Scan to Support Instant Healthcare &amp; Education Camp Deployments</h2>
+              <p class="selected-donation" data-selected-donation>Select a monthly amount above, then scan this QR code to pay.</p>
               <img src="assets/img/Udainthorai-Uruvakkuvom-Charitable-Trust-upi.png" alt="UPI QR code for Udainthorai Uruvakkuvom Charitable Trust through Karur Vysya Bank">
               <p class="vpa">UPI: w/pos.2921040a@kvb</p>
               <p class="vpa">TID: 2921040A</p>
@@ -134,7 +167,7 @@
     <div class="footer-grid">
       <div><h2>Udainthorai Uruvakkuvom Charitable Trust</h2><p>Secure, transparent giving channels for community programs.</p></div>
       <div><h3>Explore</h3><div class="footer-links"><a href="transparency.html">Transparency</a><a href="gallery.html">Initiatives</a><a href="contact.html">Contact</a></div></div>
-      <div><h3>Contact</h3><p>89402 53301<br>udainthoraiuruvakkvom@gmail.com</p></div>
+      <div><h3>Contact</h3><p>9994289766<br>udainthoraiuruvakkvom@gmail.com</p></div>
     </div>
   </footer>
   <script src="assets/js/main.js"></script>

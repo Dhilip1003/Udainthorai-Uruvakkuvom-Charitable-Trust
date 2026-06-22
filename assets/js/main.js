@@ -113,6 +113,46 @@
     });
   }
 
+  const donationOptions = document.querySelector("[data-donation-options]");
+  if (donationOptions) {
+    const targetSelector = donationOptions.dataset.target || "#upi-qr";
+    const paymentTarget = document.querySelector(targetSelector);
+    const selectedDonation = document.querySelector("[data-selected-donation]");
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    donationOptions.addEventListener("change", (event) => {
+      const input = event.target;
+      if (!(input instanceof HTMLInputElement) || input.name !== "monthly_amount") return;
+
+      if (selectedDonation) {
+        selectedDonation.textContent = `Selected monthly amount: \u20b9${input.value}. Scan this QR code to pay.`;
+      }
+
+      if (paymentTarget) {
+        paymentTarget.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+        paymentTarget.focus({ preventScroll: true });
+        window.history.replaceState(null, "", targetSelector);
+      }
+    });
+  }
+
+  const createFloatingActions = () => {
+    if (document.querySelector("[data-floating-actions]")) return;
+
+    const actions = document.createElement("aside");
+    actions.className = "floating-actions notranslate";
+    actions.setAttribute("data-floating-actions", "");
+    actions.setAttribute("aria-label", "Quick contact action");
+    actions.innerHTML = `
+      <a class="floating-action floating-whatsapp" href="https://wa.me/919994289766?text=Hello%20Udainthorai%20Uruvakkuvom%20Charitable%20Trust%2C%20I%20would%20like%20to%20contact%20you." target="_blank" rel="noopener" aria-label="Contact Udainthorai Uruvakkuvom Charitable Trust on WhatsApp">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5.2 19.1 6 15.8a7.6 7.6 0 1 1 3 3z"/><path d="M9.2 8.8c.2-.4.4-.5.7-.5h.5c.2 0 .4.1.5.4l.7 1.7c.1.2.1.4-.1.6l-.5.6c.8 1.3 1.9 2.4 3.3 3.1l.7-.8c.2-.2.4-.2.7-.1l1.6.8c.3.1.4.3.4.6v.4c0 .4-.2.7-.5.9-.6.4-1.3.5-2 .3-3.2-.8-5.8-3.3-6.8-6.4-.2-.6.1-1.2.8-1.6z"/></svg>
+      </a>
+    `;
+    document.body.appendChild(actions);
+  };
+
+  createFloatingActions();
+
   const createTranslationWidget = () => {
     if (document.querySelector("[data-translation-widget]")) return;
 
@@ -126,9 +166,8 @@
     widget.setAttribute("data-translation-widget", "");
     widget.setAttribute("aria-label", "Translate page");
     widget.innerHTML = `
-      <button class="translation-toggle" type="button" data-translation-toggle aria-expanded="false">
+      <button class="translation-toggle" type="button" data-translation-toggle aria-expanded="false" aria-label="Translate website">
         <span aria-hidden="true">A</span>
-        Translate
       </button>
       <div class="translation-panel" data-translation-panel>
         <p>Translate this page</p>
